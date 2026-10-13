@@ -4,7 +4,7 @@
 # omarchy:requires-sudo=true
 
 sudo systemctl disable --now zerotier-one.service 2>/dev/null || true
-omarchy-pkg-drop zerotier-one
+omarchy-pkg-drop zerotier-one || exit $?
 
 echo ""
 echo "ZeroTier has been removed."
