@@ -15,4 +15,4 @@ echo "Stop mise from globally managing Python now that the dev-env installer use
 # existing on disk) leaves a project-only mise Python alone.
 mise config get tools.python -g >/dev/null 2>&1 || exit 0
 
-mise rm -g python
+mise rm -g --no-prune python
