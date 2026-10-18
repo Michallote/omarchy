@@ -3,7 +3,7 @@ echo "Stop mise from globally managing Python now that the dev-env installer use
 # omarchy-install-dev-env python used to run `mise use --global python@latest`
 # alongside installing uv. A global mise Python shims `python`/`pip` ahead of
 # the distro-packaged Python for every shell, which is exactly what broke
-# things system-wide, so the install/remove flow no longer touches mise for
+# things system-wide, so the installer no longer touches mise for
 # Python at all. Existing machines that already set that global pin are left
 # with the conflicting shim until this repairs it.
 #
